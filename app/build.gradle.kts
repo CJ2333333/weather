@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.weather0119deh"
-        minSdk = 24
+        minSdk = 29
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -29,9 +29,7 @@ android {
 }
 
 dependencies {
-
-    implementation ("org.litepal.android:java:1.4.1")//对数据库进行的操作
-    implementation ("com.squareup.okhttp3:okhttp:3.4.1")//进行网络请求
+    implementation ("com.squareup.okhttp3:okhttp:4.3.1")  // 网络请求
     implementation ("com.google.code.gson:gson:2.8.6")//解析JSON数据
     implementation ("com.github.bumptech.glide:glide:4.11.0")//加载和展示图片
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -41,4 +39,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("androidx.preference:preference:1.1.1")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
+
 }

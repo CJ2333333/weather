@@ -2,8 +2,6 @@ package com.example.weather0119deh.db;
 
 import org.litepal.crud.DataSupport;
 
-import java.security.PrivateKey;
-
 public class Province extends DataSupport {
     private int id;
     private String provinceName;

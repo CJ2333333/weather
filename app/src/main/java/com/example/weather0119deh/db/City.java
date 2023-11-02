@@ -1,8 +1,9 @@
 package com.example.weather0119deh.db;
 
+
 import org.litepal.crud.DataSupport;
 
-public class City extends DataSupport{
+public class City extends DataSupport {
     private int id;
     private String cityName;
     private int cityCode;
